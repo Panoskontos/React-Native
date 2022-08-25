@@ -27,8 +27,9 @@ const styles = StyleSheet.create({
   appcontainer: {
     height:'100%',
     backgroundColor: 'black',
-    alignItems: 'flex-end',
+    alignItems: 'center',
     justifyContent: 'center',
+   
   },
   title: {
     color:'white',
@@ -37,17 +38,17 @@ const styles = StyleSheet.create({
 
   box1:{
     backgroundColor:'darkblue',
-    height:40,
+    height:'5%',
     width:'50%',
   },
   box2:{
     backgroundColor:'yellow',
-    height:40,
+    height:'5%',
     width:'50%',
   },
   box3:{
     backgroundColor:'red',
-    height:40,
+    height:'5%',
     width:'50%',
   },
 });
