@@ -10,19 +10,26 @@ export default function App() {
 
 
   return (
-    <View >
-        <View style={styles.appcontainer}>
-            <Text>Hello Panos!</Text>
+    <View style={styles.appcontainer}>
+
+        <View >
+            <Text style={styles.title}>Hello Panos!</Text>
+      
         </View>
+    
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   appcontainer: {
-    backgroundColor: 'aqua',
+    height:'100%',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
-    height:'100%',
+  },
+  title: {
+    color:'white',
+    fontSize:24,
   },
 });
