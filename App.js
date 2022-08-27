@@ -12,12 +12,12 @@ export default function App() {
   {/* <Text style={styles.title}>Hello Panos!</Text> */}
   return (
     <View style={styles.appcontainer}>
-        <View style={styles.box1}>
+        {/* <View style={styles.box1}>
         </View>
         <View style={styles.box2}>
         </View>
         <View style={styles.box3}>
-        </View>
+        </View> */}
     
     </View>
   );
@@ -31,24 +31,24 @@ const styles = StyleSheet.create({
     
    
   },
-  title: {
-    color:'white',
-    fontSize:24,
-  },
+  // title: {
+  //   color:'white',
+  //   fontSize:24,
+  // },
 
-  box1:{
-    backgroundColor:'darkblue',
-    flex:1,
+  // box1:{
+  //   backgroundColor:'darkblue',
+  //   flex:1,
    
-  },
-  box2:{
-    backgroundColor:'yellow',
-    flex:4,
+  // },
+  // box2:{
+  //   backgroundColor:'yellow',
+  //   flex:4,
   
-  },
-  box3:{
-    backgroundColor:'red',
-    flex:3,
+  // },
+  // box3:{
+  //   backgroundColor:'red',
+  //   flex:3,
     
-  },
+  // },
 });
