@@ -17,8 +17,6 @@ export default function App() {
        
 
         <MyButton />
-        <MyButton />
-        <MyButton />
     
     </View>
   );
