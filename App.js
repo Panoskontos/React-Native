@@ -1,7 +1,9 @@
 
 // import { StatusBar } from 'expo-status-bar';
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import MyButton from './MyButton';
+
 
 export default function App() {
   const onPressLearnMore = () =>{
@@ -12,12 +14,11 @@ export default function App() {
   {/* <Text style={styles.title}>Hello Panos!</Text> */}
   return (
     <View style={styles.appcontainer}>
-        {/* <View style={styles.box1}>
-        </View>
-        <View style={styles.box2}>
-        </View>
-        <View style={styles.box3}>
-        </View> */}
+       
+
+        <MyButton />
+        <MyButton />
+        <MyButton />
     
     </View>
   );
@@ -26,6 +27,9 @@ export default function App() {
 const styles = StyleSheet.create({
   appcontainer: {
     height:'100%',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
     backgroundColor: 'black',
     
     
