@@ -4,9 +4,8 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 export default function MyButton(){
     return(
         <>
-        <Text style={styles.button}>
-        Button
-        </Text>
+        
+        <Button color="primary" size="md" title="Button" type="outline" />
         </>
     )
 }
