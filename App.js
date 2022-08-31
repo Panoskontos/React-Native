@@ -1,7 +1,7 @@
 
 // import { StatusBar } from 'expo-status-bar';
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import MyButton from './components/MyButton.js';
 import MyBox from './components/MyBox.js';
 
@@ -14,14 +14,37 @@ export default function App() {
   {/* <Text style={styles.title}>Hello Panos!</Text> */}
   return (
     <View style={styles.appcontainer}>
+      <ScrollView>
+
        
         <MyBox color='white'>
 
           <MyButton title="save" color="lightblue"/>
           <MyButton title="reset" color="aqua"/>
           <MyButton title="back" color="pink"/>
-
         </MyBox>
+
+        <MyBox color='white'>
+
+        <MyButton title="save" color="lightblue"/>
+        <MyButton title="reset" color="aqua"/>
+        <MyButton title="back" color="pink"/>
+        </MyBox>
+        <MyBox color='white'>
+
+        <MyButton title="save" color="lightblue"/>
+        <MyButton title="reset" color="aqua"/>
+        <MyButton title="back" color="pink"/>
+        </MyBox>
+        
+        <MyBox color='white'>
+
+        <MyButton title="save" color="lightblue"/>
+        <MyButton title="reset" color="aqua"/>
+        <MyButton title="back" color="pink"/>
+        </MyBox>
+
+      </ScrollView>
     
     </View>
   );

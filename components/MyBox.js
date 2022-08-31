@@ -7,6 +7,7 @@ export default function MyBox(props){
           padding:20,
           backgroundColor:props.color,
           borderRadius:10,
+          marginBottom:10
         }
     })
     return(
