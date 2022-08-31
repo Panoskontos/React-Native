@@ -6,29 +6,29 @@ export default function MyButton(props){
         button: {
           color:'white',
           fontSize:24,
-            paddingTop: 20,
-            paddingBottom:20,
+            paddingTop: 10,
+            paddingBottom:10,
             paddingLeft:40,
             paddingRight:40,
             marginBottom:5,
+            marginTop:10,
           backgroundColor:props.color,
           borderRadius:10,
         }
     })
     return(
         <>
-        <TouchableHighlight onPress={()=>alert('you pressed the button')}>
+        {/* <TouchableHighlight onPress={()=>alert('you pressed the button')}> */}
 
         <View style={styles.button}  >
             <Button 
             size="md" 
             title={props.title} 
             type="outline" 
-            // onPress={()=>alert("Press Button")}
             />
         </View>
 
-            </TouchableHighlight>
+            {/* </TouchableHighlight> */}
         </>
     )
 }

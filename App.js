@@ -1,7 +1,7 @@
 
 // import { StatusBar } from 'expo-status-bar';
-import React from 'react'
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import React, { useState } from 'react'
+import { StyleSheet, Text, View, ScrollView, TextInput, Button } from 'react-native';
 import MyButton from './components/MyButton.js';
 import MyBox from './components/MyBox.js';
 
@@ -9,6 +9,10 @@ export default function App() {
   const onPressLearnMore = () =>{
     alert("Click")
   }
+
+
+  const [name, setName] = useState('')
+  const [lname, setLName] = useState('')
 
 
   {/* <Text style={styles.title}>Hello Panos!</Text> */}
@@ -19,10 +23,17 @@ export default function App() {
 
        
         <MyBox color='white'>
+            <Text style={styles.label}  >
+              First Name
+            </Text>
+            <TextInput style={styles.TextInput} value={name} onChangeText={setName}></TextInput>
+            <Text style={styles.label}>
+              Last Name
+            </Text>
+            <TextInput style={styles.TextInput} value={lname} onChangeText={setLName}></TextInput>
 
-          <MyButton title="save" color="lightblue"/>
-          <MyButton title="reset" color="aqua"/>
-          <MyButton title="back" color="pink"/>
+            <Button title='submit' onPress={()=>alert('Hello '+name+' '+lname)} />
+
         </MyBox>
 
    
@@ -44,6 +55,21 @@ const styles = StyleSheet.create({
     
    
   },
+
+  label: {
+    color:'black',
+    fontSize:14,
+  },
+
+  TextInput:{
+    backgroundColor:'lightgrey',
+    fontSize:14,
+    padding:10,
+    borderRadius:10,
+    marginTop:10,
+    marginBottom:10,
+    width:180
+  }
   // title: {
   //   color:'white',
   //   fontSize:24,
