@@ -13,6 +13,7 @@ export default function App() {
 
   {/* <Text style={styles.title}>Hello Panos!</Text> */}
   return (
+    
     <View style={styles.appcontainer}>
       {/* <ScrollView> */}
 
