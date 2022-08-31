@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button,TouchableHighlight } from 'react-native';
 
 export default function MyButton(props){
     const styles = StyleSheet.create({
@@ -17,9 +17,19 @@ export default function MyButton(props){
     })
     return(
         <>
-        <View style={styles.button}  >
-            <Button size="md" title={props.title} type="outline" />
-        </View>
+
+        <TouchableHighlight onPress={()=>alert('you pressed the button')}>
+
+            <View style={styles.button}  >
+                <Button 
+                size="md" 
+                title={props.title} 
+                type="outline" 
+                onPress={()=>alert("Press Button")}
+                />
+            </View>
+
+        </TouchableHighlight>
         </>
     )
 }

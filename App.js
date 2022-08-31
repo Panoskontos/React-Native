@@ -14,7 +14,7 @@ export default function App() {
   {/* <Text style={styles.title}>Hello Panos!</Text> */}
   return (
     <View style={styles.appcontainer}>
-      <ScrollView>
+      {/* <ScrollView> */}
 
        
         <MyBox color='white'>
@@ -24,27 +24,9 @@ export default function App() {
           <MyButton title="back" color="pink"/>
         </MyBox>
 
-        <MyBox color='white'>
+   
 
-        <MyButton title="save" color="lightblue"/>
-        <MyButton title="reset" color="aqua"/>
-        <MyButton title="back" color="pink"/>
-        </MyBox>
-        <MyBox color='white'>
-
-        <MyButton title="save" color="lightblue"/>
-        <MyButton title="reset" color="aqua"/>
-        <MyButton title="back" color="pink"/>
-        </MyBox>
-        
-        <MyBox color='white'>
-
-        <MyButton title="save" color="lightblue"/>
-        <MyButton title="reset" color="aqua"/>
-        <MyButton title="back" color="pink"/>
-        </MyBox>
-
-      </ScrollView>
+      {/* </ScrollView> */}
     
     </View>
   );
