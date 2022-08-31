@@ -3,7 +3,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import MyButton from './components/MyButton.js';
-
+import MyBox from './components/MyBox.js';
 
 export default function App() {
   const onPressLearnMore = () =>{
@@ -15,8 +15,13 @@ export default function App() {
   return (
     <View style={styles.appcontainer}>
        
+        <MyBox color='white'>
 
-        <MyButton />
+          <MyButton title="save" color="lightblue"/>
+          <MyButton title="reset" color="aqua"/>
+          <MyButton title="back" color="pink"/>
+
+        </MyBox>
     
     </View>
   );
