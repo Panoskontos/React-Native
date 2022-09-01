@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import { StyleSheet, Text, View, ScrollView, TextInput, Button } from 'react-native';
 import MyButton from './components/MyButton.js';
 import MyBox from './components/MyBox.js';
+import MainNumber from './components/MainNumber.js';
+
 
 export default function App() {
  
@@ -11,7 +13,10 @@ export default function App() {
     
     <View style={styles.appcontainer}>
      
-    
+        <MyBox color="white">
+            <MainNumber />
+            <Text>Counter</Text>
+        </MyBox>
     </View>
   );
 }
@@ -22,10 +27,7 @@ const styles = StyleSheet.create({
     display:'flex',
     justifyContent:'center',
     alignItems:'center',
-    backgroundColor: 'white',
-    
-    
-   
+    backgroundColor: 'black',
   },
 
 });
