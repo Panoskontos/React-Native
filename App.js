@@ -15,7 +15,10 @@ export default function App() {
      
         <MyBox color="#5ba0e7">
             <MainNumber />
-            <Text>Counter</Text>
+            {/* <Text>Counter</Text> */}
+            <MyButton title='+' color='aqua' />
+            <MyButton title='-' color='aqua' />
+
         </MyBox>
     </View>
   );

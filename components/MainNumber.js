@@ -12,7 +12,7 @@ export default function MainNumber(props){
         },
 
         textstyle:{
-            fontWeight:100,
+            fontWeight:0.9,
             fontSize:100,
 
         }
