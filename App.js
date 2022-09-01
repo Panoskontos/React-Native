@@ -13,7 +13,7 @@ export default function App() {
     
     <View style={styles.appcontainer}>
      
-        <MyBox color="white">
+        <MyBox color="#5ba0e7">
             <MainNumber />
             <Text>Counter</Text>
         </MyBox>

@@ -7,13 +7,20 @@ export default function MainNumber(props){
           padding:20,
           backgroundColor:"#5ba0e7",
           borderRadius:10,
-          marginBottom:10
+          marginBottom:10,
+          
+        },
+
+        textstyle:{
+            fontWeight:100,
+            fontSize:100,
+
         }
     })
     return(
         <>
         <View style={styles.button}  >
-            <Text>10</Text>
+            <Text style={styles.textstyle}>10</Text>
         </View>
         </>
     )
