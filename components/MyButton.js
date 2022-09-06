@@ -23,15 +23,17 @@ export default function MyButton(props){
     return(
         <>
         {/* <TouchableHighlight onPress={()=>alert('you pressed the button')}> */}
+        <TouchableHighlight onPress={()=>alert("What are you doin stupe?")}>
 
-        <View style={styles.button}  >
-            <Button 
-            size="md" 
-            title={props.title} 
-            type="outline" 
-            style={styles.insidebutton} 
-            />
-        </View>
+                    <View style={styles.button}  >
+                        <Button 
+                        size="md" 
+                        title={props.title} 
+                        type="outline" 
+                        style={styles.insidebutton} 
+                        />
+                    </View>
+            </TouchableHighlight>
 
             {/* </TouchableHighlight> */}
         </>

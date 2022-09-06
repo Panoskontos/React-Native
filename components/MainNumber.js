@@ -20,7 +20,7 @@ export default function MainNumber(props){
     return(
         <>
         <View style={styles.button}  >
-            <Text style={styles.textstyle}>10</Text>
+            <Text style={styles.textstyle}>{props.children}</Text>
         </View>
         </>
     )
