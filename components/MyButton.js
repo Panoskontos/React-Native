@@ -23,7 +23,7 @@ export default function MyButton(props){
     return(
         <>
         {/* <TouchableHighlight onPress={()=>alert('you pressed the button')}> */}
-        <TouchableHighlight onPress={()=>alert("What are you doin stupe?")}>
+        <TouchableHighlight onPress={()=>{props.action()}}>
 
                     <View style={styles.button}  >
                         <Button 

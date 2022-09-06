@@ -11,6 +11,13 @@ export default function App() {
  
   const [number, setNumber] = useState(0)
 
+  function plus(){
+    setNumber(number+1)
+  }
+  function minus(){
+    setNumber(number-1)
+  }
+
   return (
     
     <View style={styles.appcontainer}>
@@ -21,8 +28,8 @@ export default function App() {
             
             <View style={styles.button_container}>
 
-                <MyButton title='+' color='aqua' />
-                <MyButton title='-' color='aqua' />
+                <MyButton title='+' color='aqua' action={plus}/>
+                <MyButton title='-' color='aqua' action={minus}/>
             
             </View>
 
