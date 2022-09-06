@@ -15,9 +15,13 @@ export default function App() {
      
         <MyBox color="#5ba0e7">
             <MainNumber />
-            {/* <Text>Counter</Text> */}
-            <MyButton title='+' color='aqua' />
-            <MyButton title='-' color='aqua' />
+            
+            <View style={styles.button_container}>
+
+                <MyButton title='+' color='aqua' />
+                <MyButton title='-' color='aqua' />
+            
+            </View>
 
         </MyBox>
     </View>
@@ -32,5 +36,10 @@ const styles = StyleSheet.create({
     alignItems:'center',
     backgroundColor: 'black',
   },
+
+  button_container:{
+    display:'flex',
+    flexDirection:'row'
+  }
 
 });

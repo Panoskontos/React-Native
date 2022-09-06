@@ -8,12 +8,12 @@ export default function MyButton(props){
           fontSize:24,
             paddingTop: 10,
             paddingBottom:10,
-            paddingLeft:40,
-            paddingRight:40,
-            marginBottom:5,
-            // marginTop:10,
-          backgroundColor:props.color,
-          borderRadius:10,
+            paddingLeft:20,
+            paddingRight:20,
+            margin:5,
+            marginBottom:15,
+              backgroundColor:props.color,
+            borderRadius:10,
         },
 
         insidebutton:{
